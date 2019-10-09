@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkStar() {
+
+        let a = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let b = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let c = prompt("nhập c:");
+        let index = -1;
+        for (let i = 0; i < a.length; i++) {
+            if (c === a[i]) {
+                index = i;
+                break;
+            }
+        }
+        if (index === -1) {
+            document.write("khong có");
+        } else {
+            document.write(b[index]);
+        }
+    }
+
+    checkStar();
+
+</script>
+</body>
+</html>
